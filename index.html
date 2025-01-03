@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swetha Adapala Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Section -->
+    <header class="welcome-section">
+        <h1>Swetha Adapala</h1>
+        <p>Aspiring Software Engineer</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate developer with a Degree in Electronics and Communication, proficient in Python, Java, and data visualization tools such as Excel. To learn and gain new experience while utilizing my interpersonal skills to help achieve business goals. Excellent analytical and developmental skills for a software engineer role. Looking to work for a dynamic organization with opportunities for career growth. Quick learner and problem solver.</p>
+        <p><strong>Age:</strong> 21</p>
+        <p><strong>Contact:</strong> ☎ +91 9100953506</p>
+        <p><strong>Mail:</strong> ✉ adapalaswetha506@gmail.com</p>
+        <p><strong>Location:</strong> 🐧 Chittoor, Andhra Pradesh</p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>If you'd like to view my resume, please enter your email below:</p>
+        <form id="resume-form" onsubmit="openResume(event)">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Technical Skills:</strong> Python, Java, SQL, Excel</li>
+            <li><strong>Soft Skills:</strong> Problem-Solving, Adaptability, Teamwork</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>My Education</h2>
+        <p>Education is not about teaching what to think, but empowering how to think and discover.</p>
+        <ul>
+            <li>
+                <strong>B.Tech | ECE</strong><br>
+                VEMU Institute Of Technology, Chittoor, Andhra Pradesh 517112<br>
+                <strong>2020-2024 | Currently Pursuing</strong><br>
+                CGPA: 8.67
+            </li>
+            <li>
+                <strong>Intermediate</strong><br>
+                Sreenivasa Junior College, Chittoor, Andhra Pradesh 517001<br>
+                <strong>2018-2020 | Completed</strong><br>
+                CGPA: 9.94
+            </li>
+            <li>
+                <strong>High School</strong><br>
+                Sri Vidhyanikethan High School, Chittoor, Andhra Pradesh 517124<br>
+                <strong>2017-2018 | Completed</strong><br>
+                CGPA: 9.8
+            </li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Electronic Safeguard for Important Documents:</strong>
+                Designed a secure document safeguarding system using RFID, password, OTP, and GSM. Ensured security via a solenoid lock, keypad, buzzer, and real-time clock module.
+            </li>
+            <li>
+                <strong>TravelTales - A Collaborative Traveling App:</strong>
+                Built a responsive web app using React JS, HTML, CSS, and JavaScript during a full-stack development internship. Facilitated planning and collaboration for travelers.
+            </li>
+            <li>
+                <strong>Snake Game:</strong>
+                Developed an interactive Snake Game using Python and Pygame, implementing object-oriented programming principles and enhancing gameplay mechanics.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:adapalaswetha506@gmail.com" method="post" enctype="text/plain">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-column">
+            <h3>Swetha's Portfolio</h3>
+            <p>Thank you for visiting my portfolio website. Connect with me over social media!</p>
+            <p>Keep Rising 🚀</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Info</h3>
+            <p><strong>Contact:</strong> ☎ +91 9100953506</p>
+            <p><strong>Mail:</strong> ✉ adapalaswetha506@gmail.com</p>
+            <p><strong>Location:</strong> 🐧 Chittoor, Andhra Pradesh</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function openResume(event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            alert("Resume link will be sent to: " + email);
+            window.open("https://drive.google.com/file/d/1iPLbGkDN8HudopH6cVOel-2f6ZcKmn9y/view?usp=drivesdk", "_blank");
+        }
+    </script>
+</body>
+</html>
